@@ -1,0 +1,48 @@
+/* Set the background to matte black for the entire page */
+body {
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Base styles for the button */
+.aqua-button {
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover styles for the button */
+.aqua-button:hover {
+  background: linear-gradient(45deg, pink, purple);
+  transform: scale(1.05); /* Slightly larger on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
+
+/* Style for the red text on top */
+.button-text {
+  font-weight: bold;
+  font-style: italic;
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Style for the copyright text at the bottom */
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  color: white;
+}
